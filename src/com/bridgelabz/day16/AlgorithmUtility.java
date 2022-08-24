@@ -6,6 +6,8 @@ import java.io.IOException;
 import java.util.Arrays;
 
 public class AlgorithmUtility {
+
+
     public static int stringBinarySearch(String[] arr, String key) {
     int start = 0, end = arr.length - 1, mid;
     while (start <= end) {
@@ -91,7 +93,35 @@ public class AlgorithmUtility {
         }
         return false;
     }
-      }
+    public static boolean isPrime(int num) {
+        if (num == 0 || num == 1) {
+            return false;
+        }
+        for (int i = 2; i < num; i++) {
+            if (num % i == 0) {
+                return false;
+            }
+        }
+        return true;
+
+    }
+    public boolean isPalindrome(int num) {
+        int r, sum = 0;
+        int temp = num;
+        while (num > 0) {
+            r = num % 10;
+            sum = (sum * 10) + r;
+            num = num / 10;
+        }
+        if (temp == sum) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+
+}
 
 
 

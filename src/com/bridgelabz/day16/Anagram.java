@@ -11,7 +11,7 @@ public class Anagram {
         System.out.println("enter string 2");
         str2=scanner.next();
         AlgorithmUtility utility = new AlgorithmUtility();
-        boolean isAnagram=utility.isAnagram(str1,str2);
+        boolean isAnagram=utility.isAnagram(str1, str2);
         if(isAnagram) {
             System.out.println("Two String are anagram");
         }else {

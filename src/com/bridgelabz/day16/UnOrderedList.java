@@ -12,7 +12,7 @@ public class UnOrderedList {
         String[] strArray = null;
         try {
             strArray = utility.readFile(
-                            "/C:/Users/sunny/IdeaProjects/AssignMentDay16_17/Words.txt/")
+                            "/C:/Users/sunny/IdeaProjects/AssignMentDay16_17/Words.txt")
                     .split(",");
         } catch (IOException e) {
             e.printStackTrace();
@@ -31,7 +31,7 @@ public class UnOrderedList {
 
         try {
             utility.writeFile(
-                    "/C:/Users/sunny/IdeaProjects/AssignMentDay16_17/Words.txt/",
+                    "/C:/Users/sunny/IdeaProjects/AssignMentDay16_17/Words.txt",
                     list.returnListInString());
         } catch (IOException e) {
             e.printStackTrace();

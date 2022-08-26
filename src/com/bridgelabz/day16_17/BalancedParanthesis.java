@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class BalancedParanthesis {
     public static void main(String[] args) {
         StackUsingLinkedList<Character> parenthesisStack = new StackUsingLinkedList<>();
-        
+
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter equation to check: ");
 

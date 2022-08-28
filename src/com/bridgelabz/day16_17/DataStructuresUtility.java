@@ -1,6 +1,7 @@
 package com.bridgelabz.day16_17;
 
 import java.io.*;
+import java.util.Arrays;
 
 public class DataStructuresUtility {
 
@@ -226,5 +227,31 @@ public class DataStructuresUtility {
         m = month + 12 * ((14 - month) / 12) - 2;
         d1 = (day + x + 31 * m / 12) % 7;
         return d1;
+    }
+    public static boolean isAnagram(String str1, String str2) {
+        char[] arr1 = str1.toCharArray();
+        char[] arr2 = str2.toCharArray();
+        if (str1.length() != str2.length()) {
+            return false;
+        } else {
+            Arrays.sort(arr1);
+            Arrays.sort(arr2);
+            if (Arrays.equals(arr1, arr2)) {
+                return true;
+            }
+        }
+        return false;
+    }
+    public static boolean isPrime(int num) {
+        if (num == 0 || num == 1) {
+            return false;
+        }
+        for (int i = 2; i < num; i++) {
+            if (num % i == 0) {
+                return false;
+            }
+        }
+        return true;
+
     }
 }

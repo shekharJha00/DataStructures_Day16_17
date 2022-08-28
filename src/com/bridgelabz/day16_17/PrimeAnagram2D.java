@@ -8,7 +8,7 @@ public class PrimeAnagram2D {
         int[][] primeAnagramNumber = new int[10][];
 
         int j1 = 0, j2 = 0;
-        
+
         for (int i = 0; i < 10; i++) {
             for (int j = start; j <= end; j++) {
                 if (DataStructuresUtility.isPrime(j)) {
